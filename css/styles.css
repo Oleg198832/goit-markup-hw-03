@@ -22,6 +22,19 @@ body {
   font-family: roboto, sans-serif;
 }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  outline: 2px solid tomato;
+}
+
+/* page-header */
+
+.page-header {
+  background-color: var(--primary-white-color);
+}
+
 .logo {
   color: var(--accent-color);
   font-family: raleway, serif;
@@ -168,6 +181,7 @@ body {
   color: var(--title-text-color);
   background-color: var(--primary-bg-color);
   cursor: pointer;
+  border-radius: 4px;
 }
 
 .button.primary {
@@ -179,6 +193,7 @@ body {
   line-height: 1.9;
   align-items: center;
   text-align: center;
+  padding: 10px 32px;
 }
 
 .button.secondary {
@@ -189,6 +204,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
+  padding: 6px 22px;
 }
 
 .button:hover,
