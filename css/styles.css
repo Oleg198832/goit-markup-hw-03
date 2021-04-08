@@ -96,18 +96,27 @@ body {
 
 /* main section */
 
+.main {
+  text-align: center;
+}
+
 .main-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
-  text-align: center;
   text-transform: uppercase;
 }
 
 /* section */
 
 .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -117,7 +126,20 @@ body {
 
 /* tasks */
 
+.section-title-tasks {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
 .tasks .title {
+  margin-top: 0px;
+  margin-bottom: 10px;
+
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -126,13 +148,24 @@ body {
 }
 
 .tasks .text {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-size: 14px;
   line-height: 1.7;
 }
 
 /* team */
 
+.section.padding {
+  padding-top: 94px;
+  padding-bottom: 0;
+}
+
 .team .title {
+  margin-top: 30px;
+  margin-bottom: 0;
+
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -140,6 +173,9 @@ body {
 }
 
 .team .text {
+  margin-top: 10px;
+  margin-bottom: 30px;
+
   font-size: 16px;
   line-height: 1.2px;
 }
@@ -213,13 +249,19 @@ body {
 }
 
 /* стили для li */
-li {
+
+.list {
+  margin-top: 0;
+  margin-bottom: 0;
   list-style-type: none;
 }
 
 /* стили для portfolio.html */
 
 .progect .title {
+  margin-top: 20px;
+  margin-bottom: 4px;
+
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -227,6 +269,9 @@ li {
 }
 
 .progect .text {
+  margin-top: 0;
+  margin-bottom: 20px;
+
   font-size: 16px;
   line-height: 1.9;
 }
