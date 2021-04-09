@@ -25,6 +25,8 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 1200px;
   outline: 2px solid tomato;
 }
@@ -36,6 +38,8 @@ body {
 }
 
 .logo {
+  margin-right: 93px;
+
   color: var(--accent-color);
   font-family: raleway, serif;
   font-weight: 700;
@@ -59,8 +63,26 @@ body {
   color: var(--accent-color);
 }
 
+/* main-nav */
+
+.nav {
+  margin-right: 331px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
 /* site-nav */
 
+.site-nav {
+  display: flex;
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
 .site-nav .link {
   color: var(--title-text-color);
   font-weight: 500;
@@ -82,6 +104,14 @@ body {
 
 /* auth-nav */
 
+.auth-nav {
+  display: flex;
+}
+
+.auth-nav .item + .item {
+  margin-left: 50px;
+}
+
 .auth-nav .link {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -98,6 +128,7 @@ body {
 
 .main {
   text-align: center;
+  padding-top: 94px;
 }
 
 .main-title {
@@ -112,6 +143,10 @@ body {
 }
 
 /* section */
+
+.section {
+  padding-top: 94px;
+}
 
 .section-title {
   margin-top: 0;
@@ -157,11 +192,6 @@ body {
 
 /* team */
 
-.section.padding {
-  padding-top: 94px;
-  padding-bottom: 0;
-}
-
 .team .title {
   margin-top: 30px;
   margin-bottom: 0;
@@ -181,6 +211,10 @@ body {
 }
 
 /* footer */
+
+.footer {
+  padding-top: 94px;
+}
 
 .logo-footer {
   color: var(--title-text-color);
@@ -251,8 +285,8 @@ body {
 /* стили для li */
 
 .list {
-  margin-top: 0;
-  margin-bottom: 0;
+  padding: 0;
+  margin: 0;
   list-style-type: none;
 }
 
