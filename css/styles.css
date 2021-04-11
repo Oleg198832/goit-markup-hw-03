@@ -14,6 +14,7 @@
   --primary-bg-color: #f5f4fa;
   --secondary-bg-color: #e5e5e5;
   --primary-white-color: #ffffff;
+  --footer-bg-color: #2f303a;
 }
 
 body {
@@ -27,19 +28,18 @@ body {
   margin-right: auto;
   padding-right: 20px;
   padding-left: 20px;
-  width: 1200px;
+  width: 1240px;
   outline: 2px solid tomato;
 }
 
 /* page-header */
 
 .page-header {
-  background-color: var(--primary-white-color);
+  border-bottom: 1px solid #ececec;
+  padding-top: 94px;
 }
 
 .logo {
-  margin-right: 93px;
-
   color: var(--accent-color);
   font-family: raleway, serif;
   font-weight: 700;
@@ -102,6 +102,10 @@ body {
   text-decoration: none;
 }
 
+.nav .site-nav {
+  margin-left: 93px;
+}
+
 /* auth-nav */
 
 .auth-nav {
@@ -134,6 +138,8 @@ body {
 .main-title {
   margin-top: 0;
   margin-bottom: 30px;
+  padding-right: 252px;
+  padding-left: 252px;
 
   color: var(--primary-white-color);
   font-weight: 900;
@@ -161,6 +167,15 @@ body {
 
 /* tasks */
 
+.tasks {
+  display: flex;
+  justify-content: center;
+}
+
+.tasks .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .section-title-tasks {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -171,6 +186,7 @@ body {
   width: 1px !important;
   overflow: hidden;
 }
+
 .tasks .title {
   margin-top: 0px;
   margin-bottom: 10px;
@@ -190,7 +206,36 @@ body {
   line-height: 1.7;
 }
 
+/* our business section */
+
+.our-business {
+  display: flex;
+  justify-content: center;
+}
+
+.our-business .item {
+  margin-right: 30px;
+}
+
+.our-business .item:last-child {
+  margin-right: 0px;
+}
+
 /* team */
+
+.team {
+  display: flex;
+  justify-content: center;
+}
+
+.team .item {
+  padding-right: 30px;
+  text-align: center;
+}
+
+.team .item:last-child {
+  padding-right: 0;
+}
 
 .team .title {
   margin-top: 30px;
@@ -214,10 +259,11 @@ body {
 
 .footer {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .logo-footer {
-  color: var(--title-text-color);
+  color: var(--primary-white-color);
   font-family: raleway, serif;
   font-size: 26px;
   line-height: 1.2;
@@ -228,6 +274,9 @@ body {
 }
 
 .address {
+  margin-top: 20px;
+  margin-bottom: 9px;
+
   color: rgba(255, 255, 255, 1);
   font-size: 14px;
   line-height: 1.7;
@@ -292,7 +341,52 @@ body {
 
 /* стили для portfolio.html */
 
-.progect .title {
+.progect {
+  display: flex;
+  margin-bottom: 34px;
+  justify-content: center;
+}
+
+.progect .item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.progect:last-child {
+  margin-bottom: 0;
+}
+
+.progects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.progects .item {
+  border-bottom: 1px solid #eeeeee;
+  width: 370px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.progects .item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.progects .item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.section-title-progect {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+.progects .title {
   margin-top: 20px;
   margin-bottom: 4px;
 
@@ -302,10 +396,14 @@ body {
   line-height: 2px;
 }
 
-.progect .text {
-  margin-top: 0;
+.progects .text {
   margin-bottom: 20px;
 
   font-size: 16px;
   line-height: 1.9;
+}
+
+.text {
+  padding: 0;
+  margin: 0;
 }
