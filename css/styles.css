@@ -11,15 +11,15 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
-  --primary-bg-color: #f5f4fa;
-  --secondary-bg-color: #e5e5e5;
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #f5f4fa;
   --primary-white-color: #ffffff;
   --footer-bg-color: #2f303a;
 }
 
 body {
   color: var(--primary-text-color);
-  background-color: var(--secondary-bg-color);
+  background-color: var(--primary-bg-color);
   font-family: roboto, sans-serif;
 }
 
@@ -139,6 +139,7 @@ body {
 
 .main {
   text-align: center;
+  background-color: var(--footer-bg-color);
 }
 
 .main-title {
@@ -221,6 +222,7 @@ body {
 
 .our-business .item {
   margin-right: 30px;
+  padding-bottom: 94px;
 }
 
 .our-business .item:last-child {
@@ -236,6 +238,7 @@ body {
 
 .team .item {
   padding-right: 30px;
+  padding-bottom: 94px;
   text-align: center;
 }
 
@@ -263,6 +266,10 @@ body {
 
 /* footer */
 
+.footer {
+  background-color: var(--footer-bg-color);
+}
+
 .contacts {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -271,10 +278,6 @@ body {
 
 .contacts .footer-link {
   padding-bottom: 9px;
-}
-
-.footer {
-  padding-top: 94px;
 }
 
 .logo-footer {
@@ -401,10 +404,13 @@ body {
   width: 1px !important;
   overflow: hidden;
 }
-.progects .title {
-  margin-top: 20px;
-  margin-bottom: 4px;
 
+.names {
+  min-width: 322px;
+  padding: 20px 24px;
+}
+
+.progects .title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -412,8 +418,6 @@ body {
 }
 
 .progects .text {
-  margin-bottom: 20px;
-
   font-size: 16px;
   line-height: 1.9;
 }
